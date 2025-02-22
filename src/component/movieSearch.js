@@ -8,7 +8,7 @@ const MovieSearch = () => {
   const { movies, loading, error, page, totalPages } = useSelector(
     (state) => state.movies
   );
-  const [query, setQuery] = useState(""); // No default value
+  const [query, setQuery] = useState(""); 
 
   useEffect(() => {
     const delayDebounceFn = setTimeout(() => {
